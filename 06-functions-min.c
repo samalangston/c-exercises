@@ -11,8 +11,20 @@
 // - Inputs: -3 and 4 -> "The smaller number is -3"
 // Hint: you can use an if/else inside the function, or use a temporary
 // variable to track the minimum.
-int min_of_two(int a, int b) {
+int min_of_two(int a, int b)
+{
     // TODO: replace this placeholder return with the correct logic.
+    if (a<b)
+    {
+        return a; 
+    
+    }
+    else 
+    {
+        return b;
+    }
+
+
     return 0;
 }
 
@@ -27,6 +39,7 @@ int main(void) {
     scanf("%d", &second);
 
     // TODO: call min_of_two and print the result to the screen.
-
+int min = min_of_two(first, second);
+printf("the smaller number is %d\n", min);
     return 0;
 }

@@ -14,17 +14,23 @@
 //    Enter age: 25
 //    Thanks, you entered 25
 // Hint: initialize age with an impossible value so the loop runs at least once.
-int main(void) {
+int main(void)
+{
     int age = -1;
 
     // TODO: add your while loop here to validate the input.
-while (age <0 && age >120);
-{
-    printf("Please enter an age between 0 and 120: \n");
+
+ printf("Please enter age: \n");
     scanf("%d", &age);
+//while not in range
+while (age <0 || age >120);
+{
+   
+    printf("Error: Please enter an age between 0 and 120: \n");
+ scanf("%d", &age);
+    
 }
     
-
-    printf("Thanks, you entered <%d>", age);
+printf("Thanks, you entered: %d \n", age);
     return 0;
 }

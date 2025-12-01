@@ -15,29 +15,29 @@
 int main(void) {
     int score = 0;
 
-    printf("Enter a score between 0 and 100: ");
+    printf("Enter a score between 0 and 100: \n ");
     scanf("%d", &score);
 
     // Insert your if/else-if/else chain here.
 if (score >= 90)
 {
-    printf("Score %d: A - Excellent!", score);
+    printf("Score %d: A - Excellent!\n", score);
 }
-if (score >= 80 && score <90)
+else if (score >= 80)
 {
-    printf("Score %d: B - Great!", score);
+    printf("Score %d: B - Great!\n", score);
 }
-if (score > 70 && score <80)
+else if (score >= 70)
 {
-    printf("Score %d: C - Keep practicing!", score);
+    printf("Score %d: C - Keep practicing!\n", score);
 }
-if (score > 60 && score <70)
+else if (score >=60)
 {
-    printf("Score %d: D - At least you tired.!", score);
+    printf("Score %d: D - At least you tired!\n", score);
 }
-if (score < 60)
+else 
 {
-    printf("Score %d: F -Needs more study.!", score);
+    printf("Score %d: F -Needs more study.!\n", score);
 }
     return 0;
 }

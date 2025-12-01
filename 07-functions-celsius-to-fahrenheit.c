@@ -13,18 +13,22 @@
 // - Input: -10 -> "-10.0 C is 14.0 F"
 // Hint: use %f in printf for double values. You can format with one decimal
 // place using %.1f if you like.
-double celsius_to_fahrenheit(double celsius) {
+double celsius_to_fahrenheit(double celsius)
+ {
     // TODO: return the converted temperature instead of 0.0
-    return 0.0;
+    double F = C * 1.8 + 32.
+    return F;
 }
 
-int main(void) {
+int main(void) 
+{
     double celsius = 0.0;
 
     printf("Enter temperature in Celsius: ");
-    scanf("%lf", &celsius);
+    scanf("%lf", &celsius); //lf is long float or double
 
     // TODO: call celsius_to_fahrenheit and print the converted value.
-
+double convert = celsius_to_fahrenheit(celsius);
+printf("You converted celsius %f into Fehrenheit %.1f \n", celsius, convert);
     return 0;
 }
