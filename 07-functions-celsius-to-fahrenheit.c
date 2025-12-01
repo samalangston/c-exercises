@@ -16,8 +16,9 @@
 double celsius_to_fahrenheit(double celsius)
  {
     // TODO: return the converted temperature instead of 0.0
-    double F = C * 1.8 + 32.
-    return F;
+    
+    double Fahrenheit = celsius * 1.8 + 32;
+    return Fahrenheit;
 }
 
 int main(void) 
@@ -28,7 +29,7 @@ int main(void)
     scanf("%lf", &celsius); //lf is long float or double
 
     // TODO: call celsius_to_fahrenheit and print the converted value.
-double convert = celsius_to_fahrenheit(celsius);
-printf("You converted celsius %f into Fehrenheit %.1f \n", celsius, convert);
+double Fahrenheit = celsius_to_fahrenheit(celsius);
+printf("You converted celsius %lf into Fehrenheit %.lf \n", celsius, Fahrenheit);
     return 0;
 }
